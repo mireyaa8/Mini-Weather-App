@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <link rel="stylesheet" href="miniWeatherAppCSS.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather</h1>
+    </header>
+    <div id="loader" class="loader"></div>
+    <p>Insert the region you wish to check the weather of</p>
+    <div class="search">
+      <div class="rounder">
+        <input id="user-input" type="text" placeholder="Search" />
+        <button id="submitButton" onclick="onClickButton()">Submit</button>
+      </div>
+    </div>
+    <div id="city">
+      <h2 id="h2"></h2>
+      <p id="pTemp"></p>
+      <p id="pWindSpeed"></p>
+      <p id="pDayOrNight"></p>
+      <p id="pCaughtError"></p>
+      <p id="pTime"></p>
+    </div>
+    <script src="miniWeatherAppJsCopy.js"></script>
+  </body>
 </html>
